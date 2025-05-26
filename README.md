@@ -25,4 +25,4 @@ git clone https://github.com/Happy23532/predictive_maintenance_project.git
 - `data/`: Папка с данными.
 - `README.md`: Описание проекта.
 ## Видео-демонстрация
-[Ссылка на видео]()
+https://disk.yandex.ru/i/kEtoOA6_GNX2Dw
