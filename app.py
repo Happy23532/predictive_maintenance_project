@@ -1,9 +1,12 @@
 import streamlit as st
-# Настройка навигации
+from analysis_and_model import analysis_and_model_page
+from presentation import presentation_page
+
 pages = {
- "Анализ и модель": st.Page("analysis_and_model.py", title="Анализ и модель"),
- "Презентация": st.Page("presentation.py", title="Презентация"),
+    "Анализ и модель": analysis_and_model_page,
+    "Презентация": presentation_page,
 }
+
 # Отображение навигации
-current_page = st.navigation(pages, position="sidebar", expanded=True)
-current_page.run()
+current_page = st.sidebar.selectbox("Выберите страницу", options=list(pages.keys()))
+pages[current_page]()  # вызываем функцию для выбранной страницы
